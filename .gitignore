@@ -1,0 +1,46 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+
+# TypeScript compilation output
+dist/
+build/
+
+# TypeScript configuration files to ignore
+*.tsbuildinfo
+.tsconfig
+!.tsconfig.json
+
+# IDE and editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Operating system files
+*.log
+*.tmp
+*.pid
+
+# Package files
+.npmrc
+.pnpm-debug.log
+.pnp/
+.pnp.js
+.lock-wscript
+.yarn-integrity
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.env*
+
+# Test coverage reports
+coverage/
+.jest/
+
+# Build artifacts
+.cache/
+.parcel-cache/
+.next/
+.out/
