@@ -3,6 +3,7 @@ import express, { NextFunction, Request, Response } from 'express';
 import cors from 'cors';
 import * as dotenv from "dotenv";
 import taskRouter from './routes/tasks';
+import authRouter from './routes/Authentication';
 
 dotenv.config();
 
@@ -21,6 +22,9 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hello, TypeScript Express!!');
 });
 app.use('/tasks', taskRouter);
+
+/* Authentication Routes */
+app.use('/auth', authRouter);
 
 /* Error Handling Middleware */
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
