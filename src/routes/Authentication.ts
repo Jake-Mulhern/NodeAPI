@@ -38,7 +38,8 @@ authRouter.post('/login', async (req: Request, res: Response) => {
     res.status(200).json({
         status: 200,
         success: true,
-        message: "Successfully Logged In!"
+        message: "Successfully Logged In!",
+        data: loginResponse
     });
     return;
 
